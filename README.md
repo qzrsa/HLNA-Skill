@@ -101,7 +101,7 @@ HLNA-Skill/
 ## 专家能力概览
 
 - **生物对照**：原版生物（按官方地图归类）+ 官方付费 DLC 生物（Fantastic Tames / ARK: Dragontopia）+ 模组生物（ARK-Supreme），三类分开，避免混淆。
-- **版本更新**：内置 v97（ASA 97.0，2026-11-06）记录，含南巨 Apex Challenge 驯服重做、Enigmasaur 上线、UE 5.8 升级等；防止沿用旧版攻略。
+- **版本更新**：内置 v97（ASA 97.0，2026-11-06）记录，含南巨「巅峰挑战 Apex Challenge」驯服重做（**仅 ASA 生效，ASE 仍为传统击晕驯服**）、Enigmasaur 上线、UE 5.8 升级等；防止沿用旧版攻略，并对官方 Wiki 信息卡滞后于补丁的情况做出标注。
 - **BOSS 详情速查**：ASE 12 图 / 25 BOSS / 63 行，ASA 10 图 / 22 BOSS / 60 行，双版本独立、禁止跨版本套用；含血量、准入等级、神器/战利品贡品、贡品数量、γ/β/α 能量元素、泰克印痕解锁、掉落物。
 - **查证链**：wikily.gg 中文站 → ark.wiki.gg → survivetheark 官方论坛；官方服倍率另查 wikily.gg/rates 与 dododex；服务器状态查 ark.fusey.gg / BattleMetrics / arkstatus。
 

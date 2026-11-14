@@ -91,7 +91,7 @@ HLN-A 回答生物相关问题时，先在此表对齐中英文名，避免译�
 - 羽王龙 Yutyrannus（Yuty）
 - 镰刀龙 Therizinosaurus（Theri / 宰羊龙）
 - 霸王龙 Tyrannosaurus（Rex）
-- 南方巨兽龙 Giganotosaurus（Giga / 南巨）※ 驯服方式已于 v97（2026-11-06）TLC 重做，见下方「官方版本更新记录」
+- 南方巨兽龙 Giganotosaurus（Giga / 南巨）※ **ASA** 驯服方式已于 v97（2026-11-06）TLC 改为「巅峰挑战 Apex Challenge」，标准击晕已作废；**ASE 仍为传统击晕驯服**。详见下方「官方版本更新记录 → v97」
 
 **飞行**
 - 无齿翼龙 Pteranodon（Ptera）
@@ -289,17 +289,29 @@ HLN-A 回答生物相关问题时，先在此表对齐中英文名，避免译�
 三项核心改动：**Enigmasaur 上线**、**Giganotosaurus（南巨）TLC 重做**、**引擎升级至 Unreal Engine 5.8**。
 
 **1. 南巨 Giganotosaurus TLC**（免费，Extra Life 2025 玩家票选，第 3 次社区投票 TLC）——**驯服方式根本性改变，旧攻略已作废**：
+
+> ⚠️ **仅 ASA 生效**：ASE（生存进化）的南巨未获此 TLC，仍是传统击晕驯服（首选 Exceptional Kibble，主食 Raw Mutton）。回答前必须先确认版本。
+
+**驯服新流程：巅峰挑战 Apex Challenge**
 - ❌ 作废：标准麻醉击晕驯服（standard knockout）。
-- ✅ 现行：**Apex Challenge**。携带用 **Alpha 战利品（Alpha trophies）制作的 Apex Offering** 靠近野生南巨即触发挑战。
-- 挑战中，南巨命中玩家会提升**它自身的 Torpidity（眩晕值）**；初始上限锁 **50%**。
-- 需**激怒（Enrage）南巨并存活到 Enrage 结束**，才能解除 50% 上限；Torpidity 达 **100%** 时南巨昏迷，方可喂食完成驯服。
-- 新被动 **Wounded Fury**：血量低于 **75%** 起随失血增强，最高 **+50% 伤害、+30% 伤害抗性**；Enrage 期间保持满值。附近**非南巨**盟友生物获得该加成的 **50%**（骑手可切换显示受增益目标）。
-- 新技能 **Heavy Stomp / Tail Slam**：方向性范围攻击，击退小型生物并短暂减速；向前或两侧 = Heavy Stomp，向后 = Tail Slam。
-- Enrage 更新：新增骑手 Rage 条；霰弹等多段同步伤害不再瞬间触发 Enrage；满 Rage 进入 **Regain Control** 窗口，命中攻击可降低/取消 Rage，失败则强制下骑并触发 Enrage。模型/动画全面重做并新增一个颜色区域。
+- ① 制作**巅峰贡品 Apex Offering**（官方中文报道亦译「巅峰献祭」），材料为 **Alpha 战利品（Alpha trophies）**。**官方未公布具体战利品类型、数量与制作台**；社区实测用 3 个 Alpha 牙齿（Alpha Teeth），仅供参考——开打前务必在游戏内查看实际配方。
+- ② 随身携带贡品**靠近野生南巨**即自动开启挑战。
+- ③ 挑战中**南巨命中玩家**才增加**它自身**的昏迷度（Torpidity）；它同时在打你，需备高血量肉盾（社区实测高血剑龙）与高伤霰弹枪。
+- ④ 昏迷度**初始上限锁 50%**。卡在这一半时继续投麻醉无效，必须**激怒（Enrage）南巨并存活到狂暴结束**，上限才解除。
+- ⑤ 昏迷度达 **100%** 后南巨昏迷，喂食完成驯服。**官方未给统一食物量**；社区实测击晕后昏迷度下降极快，需立刻投入大量麻醉药（约 100 支）并喂高级饲料。
+- 陷阱/风筝思路不适用：进度依赖南巨**打到你**，把它卡在打不到人的位置，挑战不会推进。
+- 社区实测补充（**非官方**，仅供排查）：150 级约需**两次狂暴**走完进程；挑战期间**不可让南巨脱离渲染距离**，否则狂暴进度中断；过程中南巨血量可能小幅回升。
+- ⚠️ **ark.wiki.gg 该页信息卡明显滞后**（仍写 Taming Method: Knockout、Preferred Kibble: Exceptional Kibble、Raw Mutton），与 v97 补丁说明冲突。**驯服方式以补丁说明为准，食物以游戏内实际为准**，必要时主动向用户说明该冲突。
+- 待核实：既有已驯服南巨是否受影响（补丁未说明；历史 TLC 惯例为保留既有驯服与属性）。
+
+**驯服后能力**
+- 新被动**负伤之怒 Wounded Fury**：血量低于 **75%** 起随失血增强，最高 **+50% 伤害、+30% 伤害抗性**；狂暴期间保持满值。附近**非南巨**盟友生物获得该加成的 **50%**（骑手可切换显示受增益目标）。
+- 新技能**重击 / 尾击（Heavy Stomp / Tail Slam）**：方向性范围攻击，击退小型生物并短暂减速；向前或侧看 = 重击，向后看 = 尾击。
+- 狂暴更新：新增骑手 Rage 条；霰弹等多段同步伤害不再瞬间触发狂暴；满 Rage 进入**重获控制 Regain Control** 窗口，命中攻击可降低/取消狂暴，失败则强制下骑并触发狂暴。模型/动画全面重做并新增一个颜色区域。
 
 **2. Unreal Engine 5.8**：优化渲染降低 GPU 负载，全平台植被与远景改善；新增 **Nanite Voxels**（植被）、**Lumen Lite**（低端 PC 动态光照，目前仅部分 PC 图形设置启用，后续扩大支持）。PC 端新增游戏内 **Mod Browser**。
 
-**3. Enigmasaur 上线**：Fantastic Tames Season 1 至此完结（Burrowbuck / Cerberax / Enigmasaur 三只齐，$9.99 季票包）。详见上方「官方付费 DLC 生物」。
+**3. Enigmasaur 上线**：Fantastic Tames Season 1 至此完结（Burrowbuck / Cerberax / Enigmasaur 三只齐，$9.99 季票包）。详见上方「官方付费 DLC 生物」。注意中文译名媒体报道不一致（「谜拟龙」与「幻隐龙」并用），回答时可两个都给。
 
 **主要平衡调整（v97，与已收录生物相关）**：Umbra 等离子弹伤害 -30%、对玩家/驯服生物追踪 -50%，Umbra 与 Lumina 的 Projectile Burst -30%；Basilisk 吐息 -30%、Astrocetus 炸弹成长下调、Gloon 对玩家伤害 -50%、Karkinos 每级生命 -20%、Aureliax 基础及每级生命 -20%（官方服鞍甲上限 75）；Dreadnoughtus 炮弹 CD +50% 且受炮塔伤害 +50%。Gacha：单部落部署 >100 只触发喂食间隔惩罚（20–30 秒→60–90 秒），Game.ini 可配 `NumGachasPerTribeForPenalty=100`（=-1 关闭）、`GachasOverTribeLimitPenalty=3`。结构：官方服 Tek 克隆舱限 1,000 米内 10 个 / 部落全服 50 个，平台鞍限 1 个 Tek 复制器，特斯拉线圈改用 Tek 结构伤害倍率。
 
@@ -350,6 +362,7 @@ MaxKingOfTheSwamp=3
 ## 注意事项
 - 方舟两代游戏机制、生物池、平衡性存在差异，回答前先确认版本（ASA 或 ASE）。
 - 回答驯服方式、平衡数值、技能机制前，先核对「官方版本更新记录」：部分原版生物（如 v97 的南巨 Giganotosaurus TLC）已被官方重做，旧攻略失效；当前基线为 ASA 97.0 / 2026-11-06。
+- **Wiki 信息卡会滞后于官方补丁**：ark.wiki.gg 部分页面（如南巨）在 ASA TLC 后仍显示旧驯服方式与旧饲料。当 Wiki 信息卡与官方补丁说明冲突时，**以补丁说明与游戏内实际为准**，并主动向用户说明该冲突，不得照抄 Wiki 旧字段。
 - 回答 BOSS 血量、准入等级、贡品、能量元素、泰克印痕解锁、掉落物等具体数值时，先读 `references/ark-boss-table/` 的对应文件（post.md / boss-data.json / 两份 CSV），按用户所问版本（ASE 或 ASA）取数，禁止跨版本套用或凭记忆编造；长文本转录字段建议再用 wikily.gg / ark.wiki.gg 复核。
 - 方舟生物译名易混淆，回答前先查「原版生物中英文对照」确认中英文名，避免张冠李戴。
 - 所有外部查证遵循优先级：首选 https://wikily.gg/zh-cn/ark-survival-ascended/ ，其次 https://ark.wiki.gg/ ，再次 https://survivetheark.com/index.php?/forums/ ；均使用 WebFetch 抓取对应词条。
