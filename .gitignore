@@ -1,0 +1,20 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# WorkBuddy runtime markers (local session state, never commit)
+.created-by-session
+.pending-preview-session
+.workbuddy/
+
+# Scratch
+*.log
+.tmp_*

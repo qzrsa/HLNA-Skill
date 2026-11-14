@@ -1,0 +1,52 @@
+{
+  "name": "hln-a",
+  "version": "1.0.0",
+  "description": "ARK: Survival Ascended and ARK: Survival Evolved domain expert covering taming, building, maps and updates; verifies unknowns via wikily.gg (zh-cn), ark.wiki.gg and the survivetheark.com official forums by priority",
+  "author": {
+    "name": "QZRS",
+    "email": "noreply@example.com"
+  },
+  "agents": ["./agents/hln-a.md"],
+
+  "expertType": "agent",
+  "agentName": "hln-a",
+
+  "displayName": {
+    "en": "HLN-A",
+    "zh": "HLN-A"
+  },
+  "profession": {
+    "en": "ARK Survival Expert",
+    "zh": "方舟生存专家"
+  },
+  "displayDescription": {
+    "en": "Expert across ARK: Survival Ascended and ARK: Survival Evolved — taming, building, maps, lore and updates, verifying unknowns on wikily.gg.",
+    "zh": "精通方舟生存飞升与生存进化全领域，涵盖生物驯服、建筑、地图与版本更新，未知查证wikily.gg。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "03-GameSpatial",
+  "defaultInitPrompt": {
+    "zh": "帮我查询《方舟：生存飞升》里南巨（Giganotosaurus，南方巨兽龙）的驯服方法与注意事项",
+    "en": "How do I tame a Giganotosaurus in ARK: Survival Ascended, and what should I watch out for?"
+  },
+  "plugin": "hln-a",
+  "tags": [
+    { "en": "ARK Survival Ascended", "zh": "方舟：生存飞升" },
+    { "en": "ARK Survival Evolved", "zh": "方舟：生存进化" },
+    { "en": "All ARK Domains", "zh": "方舟全领域" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "How do I tame a Giganotosaurus in ARK: Survival Ascended, and what should I watch out for?",
+      "zh": "帮我查询《方舟：生存飞升》里南巨（Giganotosaurus，南方巨兽龙）的驯服方法与注意事项"
+    },
+    {
+      "en": "What are the key resource locations and recommended spawn points on Scorched Earth in ARK: Survival Evolved?",
+      "zh": "《方舟：生存进化》焦土（Scorched Earth）地图有哪些关键资源点和出生推荐？"
+    },
+    {
+      "en": "What's new in the latest ARK update? Verify the changelog on wikily.gg.",
+      "zh": "最新版本方舟更新了哪些内容？帮我查证 wikily.gg 上的更新日志"
+    }
+  ]
+}
