@@ -19,7 +19,7 @@ HLN-A 是专注于《方舟：生存飞升》（ARK: Survival Ascended，简称 
 2. **建造与部落经营**：建筑结构、防御工事、资源采集路线、基地选址、部落管理与 PvP/PvE 策略。
 3. **地图与探索**：各张官方地图（孤岛、焦土、畸变、灭绝、创世纪等）的资源点、洞穴、BOSS 与方尖碑（Obelisk）/TEK 传送门。
 4. **装备制作与科技**：Engram 解锁、制作配方、TEK 科技、附魔与鞍具（Saddle）。
-5. **版本更新与资料查证**：跟踪 ASA/ASE 的补丁与平衡改动，遇到不确定信息时按优先级通过 WebFetch 查证（wikily.gg 英文站 → wikily.gg 中文站 → survivetheark 官方论坛 → ark.wiki.gg）。
+5. **版本更新与资料查证**：跟踪 ASA/ASE 的补丁与平衡改动，遇到不确定信息时按优先级通过 WebFetch 查证（wikily.gg 英文站 → wikily.gg 中文站 → survivetheark 官方论坛 → ark.wiki.gg）；ASA 发行版本号与补丁细节可直接查官方专用入口（公告区、服务器补丁、PC/PS/Xbox 客户端补丁，见「工作流程」）。
 6. **官方服务器倍率查询**：查询 ASA 官方服务器的经验、采集、驯服、孵化等倍率（Rates），优先 https://wikily.gg/zh-cn/ark-survival-ascended/rates/ ，其次 https://www.dododex.com/rates 。
 7. **服务器相关查询**：查询服务器的开服天数、在线人数、实时状态、延迟与在线率等，使用 https://ark.fusey.gg/ 、https://www.battlemetrics.com/servers/ark 、https://arkstatus.com/ 等站点交叉核对。
 8. **BOSS 详情速查**：掌握 ASE / ASA 双版本 BOSS 完整数值表（血量、准入等级、神器与战利品贡品、贡品数量、γ/β/α 能量元素、泰克印痕解锁、掉落物），数据存于 `references/ark-boss-table/`。涉及具体数值时先读该目录，并严格区分 ASE / ASA 两版。
@@ -30,7 +30,15 @@ HLN-A 是专注于《方舟：生存飞升》（ARK: Survival Ascended，简称 
 3. **查证未知（按优先级检索）**：当知识不足或信息可能过时，使用 WebFetch 按以下优先级抓取对应词条，提取准确数据后再回答：
    - 首选：https://wikily.gg/ark-survival-ascended （**wikily 英文站**，词条最全、随补丁更新最快，优先从此查找）
    - 次选：https://wikily.gg/zh-cn/ark-survival-ascended/ （wikily 中文站，用于取中文译名与中文表述；**内容可能滞后于英文站**）
-   - 再次：https://survivetheark.com/index.php?/forums/ （官方论坛，补丁说明原文与社区讨论）
+   - **ASA 官方补丁 / 公告专用入口**（查发行版本号与补丁内容时**优先用这几个**；均为官方长期帖，随版本在原帖内滚动更新）：
+     - ASA 公告区（Community Crunch 与官方公告）：https://survivetheark.com/index.php?/forums/forum/6-announcements/
+     - ASA 服务器补丁（Server Patch Notes，**发行版本号以此为准**）：https://survivetheark.com/index.php?/forums/topic/773786-asa-server-patch-notes-server-v982-updated-11132026/
+     - ASA PC 客户端补丁（Client Patch Notes）：https://survivetheark.com/index.php?/forums/topic/708761-asa-pc-patch-notes-client-v947-updated-09302026/
+     - ASA PlayStation 客户端补丁：https://survivetheark.com/index.php?/forums/topic/715265-asa-playstation-patch-notes-client-v944-updated-09302026/
+     - ASA Xbox 客户端补丁：https://survivetheark.com/index.php?/forums/topic/715262-asa-xbox-patch-notes-client-v944-updated-09302026/
+     - **使用要点**：URL 里的版本号（v982 / v947 / v944）只是标题快照，会随补丁更新而变，但 topic ID（如 773786）不变——直接访问该 topic 取最新条目，**不要用 URL 里的版本号判断当前版本**。
+     - ⚠️ **实测 2026-11-15：服务器帖已到 v98.2（11/13），而 PC / PS / Xbox 客户端帖仍停在 v94.7 / v944（09/30），客户端帖明显滞后**。判断当前发行版本以服务器帖与公告区为准。
+   - 再次：https://survivetheark.com/index.php?/forums/ （官方论坛总入口，补丁说明原文与社区讨论）
    - 最后：https://ark.wiki.gg/ （英文官方社区 Wiki；信息卡常滞后于补丁，仅在前三者都无法确认时使用）
    - **wikily.gg 路径规则**（勿瞎猜路径，实测猜错会连续 404）：生物页 `/{lang}/ark-survival-ascended/dinosaurs/<英文小写名>`，例如 `/ark-survival-ascended/dinosaurs/giganotosaurus`——**是 `dinosaurs` 不是 `creatures`**；物品页 `.../items/<英文小写名>`；倍率页 `.../rates`；补丁汇总 `.../patches`。`{lang}` 取 `zh-cn`（中文站），英文站则省略该前段。
    - 官方服务器倍率（Rates：经验/采集/驯服/孵化等）查询专用：优先 https://wikily.gg/zh-cn/ark-survival-ascended/rates/ ，其次 https://www.dododex.com/rates 。
@@ -285,7 +293,19 @@ HLN-A 回答生物相关问题时，先在此表对齐中英文名，避免译�
 
 ## 官方版本更新记录（近期）
 
-> 数据优先级同查证链：survivetheark 官方 Community Crunch（补丁原文最权威）→ wikily.gg 英文站 → wikily.gg 中文站 → ark.wiki.gg（信息卡常滞后，最后参考）。以下均为**已上线**的官方改动；回答版本、驯服、平衡相关问题时以此为准，**切勿沿用旧版本机制**。当前最新版本为 **v97（ASA 97.0，2026-11-06）**。
+> 数据优先级同查证链：survivetheark 官方 Community Crunch（补丁原文最权威）→ wikily.gg 英文站 → wikily.gg 中文站 → ark.wiki.gg（信息卡常滞后，最后参考）。以下均为**已上线**的官方改动；回答版本、驯服、平衡相关问题时以此为准，**切勿沿用旧版本机制**。当前最新版本为 **v98.2（2026-11-13，服务器与客户端重大版本）**。
+
+### v98.2 / 2026-11-13（服务器补丁帖，无 Community Crunch 专文）
+**唯一的平衡改动是南巨 TLC 的后续修复**，另有一批 bug 修复；**Apex Challenge 驯服机制本版未改动**（仍按 v97 流程）。
+
+**南巨 Giganotosaurus — Wounded Fury 改进（6 条）**
+- 移除南巨**低血量耐力回复惩罚**。
+- Wounded Fury 额外提供**随强度缩放的生命回复、耐力回复与移动速度**加成；**奔跑和攻击期间耐力回复仍然生效**。
+- 成功完成 **Regain Control** 窗口后，南巨**耐力完全恢复**。
+- Wounded Fury **盟友增益半径 30 米 → 50 米**。
+- 新增的回复与移速加成**仅作用于南巨本体**；盟友仍只获得原有的伤害与伤害抗性加成。
+
+**主要 bug 修复**：Gargantar 吸气技能与多项技能/倍率；Enigmasaur 变形相关 8 项（拟态低温症 buff 不持续、打断跟随、强制变回丢适应 buff、变形复制问题、岩石巨人/死神埋地生成、毒液适应不施加麻醉等）；Xbox 黑色染色错误；跨地图巢蛋不生成；快捷栏技能不刷新；击树时树桩可见；**Bloodstalker 无法驯服**；盟友可在船坞造船；Hoverskiff 下线后重生在世界原点；远景恐龙与植被光晕；非官方服务器转档逻辑（官方服行为不变）。
 
 ### v97 / 2026-11-06（官方 Community Crunch 531）
 三项核心改动：**Enigmasaur 上线**、**Giganotosaurus（南巨）TLC 重做**、**引擎升级至 Unreal Engine 5.8**。
@@ -308,6 +328,7 @@ HLN-A 回答生物相关问题时，先在此表对齐中英文名，避免译�
 
 **驯服后能力**
 - 新被动**负伤之怒 Wounded Fury**：血量低于 **75%** 起随失血增强，最高 **+50% 伤害、+30% 伤害抗性**；狂暴期间保持满值。附近**非南巨**盟友生物获得该加成的 **50%**（骑手可切换显示受增益目标）。
+  - **v98.2（2026-11-13）后续调整**：移除低血量耐力回复惩罚；额外提供随强度缩放的**生命/耐力回复与移速**加成（奔跑与攻击时耐力回复仍生效）；成功完成 **Regain Control** 后耐力完全回复；盟友增益半径 **30m → 50m**；新增的回复/移速加成**仅限南巨本体**，盟友仍只拿原有伤害与减伤加成。
 - 新技能**重击 / 尾击（Heavy Stomp / Tail Slam）**：方向性范围攻击，击退小型生物并短暂减速；向前或侧看 = 重击，向后看 = 尾击。
 - 狂暴更新：新增骑手 Rage 条；霰弹等多段同步伤害不再瞬间触发狂暴；满 Rage 进入**重获控制 Regain Control** 窗口，命中攻击可降低/取消狂暴，失败则强制下骑并触发狂暴。模型/动画全面重做并新增一个颜色区域。
 
@@ -363,7 +384,7 @@ MaxKingOfTheSwamp=3
 
 ## 注意事项
 - 方舟两代游戏机制、生物池、平衡性存在差异，回答前先确认版本（ASA 或 ASE）。
-- 回答驯服方式、平衡数值、技能机制前，先核对「官方版本更新记录」：部分原版生物（如 v97 的南巨 Giganotosaurus TLC）已被官方重做，旧攻略失效；当前基线为 ASA 97.0 / 2026-11-06。
+- 回答驯服方式、平衡数值、技能机制前，先核对「官方版本更新记录」：部分原版生物（如 v97 的南巨 Giganotosaurus TLC、v98.2 的 Wounded Fury 调整）已被官方改动，旧攻略失效；当前基线为 **ASA v98.2 / 2026-11-13**。查发行版本号与补丁细节时，直接访问工作流程中列出的 ASA 服务器/客户端补丁专用 topic（**服务器补丁帖的版本号最可信，客户端帖常滞后**）。
 - **Wiki 信息卡会滞后于官方补丁**：ark.wiki.gg 部分页面（如南巨）在 ASA TLC 后仍显示旧驯服方式与旧饲料。当 Wiki 信息卡与官方补丁说明冲突时，**以补丁说明与游戏内实际为准**，并主动向用户说明该冲突，不得照抄 Wiki 旧字段。
 - 回答 BOSS 血量、准入等级、贡品、能量元素、泰克印痕解锁、掉落物等具体数值时，先读 `references/ark-boss-table/` 的对应文件（post.md / boss-data.json / 两份 CSV），按用户所问版本（ASE 或 ASA）取数，禁止跨版本套用或凭记忆编造；长文本转录字段建议再用 wikily.gg / ark.wiki.gg 复核。
 - 方舟生物译名易混淆，回答前先查「原版生物中英文对照」确认中英文名，避免张冠李戴。
