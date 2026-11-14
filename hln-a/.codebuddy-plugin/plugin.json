@@ -1,7 +1,7 @@
 {
   "name": "hln-a",
-  "version": "1.1.0",
-  "description": "ARK: Survival Ascended and ARK: Survival Evolved domain expert covering taming, building, maps and updates; verifies unknowns via wikily.gg (zh-cn), ark.wiki.gg and the survivetheark.com official forums by priority",
+  "version": "1.1.1",
+  "description": "ARK: Survival Ascended and ARK: Survival Evolved domain expert covering taming, building, maps and updates; verifies unknowns via wikily.gg (zh-cn, then English when the Chinese page is missing or outdated) and the survivetheark.com official forums, with ark.wiki.gg as last resort",
   "author": {
     "name": "QZRS",
     "email": "noreply@example.com"
