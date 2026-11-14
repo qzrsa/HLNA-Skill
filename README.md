@@ -22,7 +22,7 @@
 ## 前置条件
 
 - WorkBuddy 桌面端（Windows / macOS）
-- Python 3（用于运行注册脚本；脚本随 WorkBuddy 安装在 `skills/expert-manager/scripts/`）
+- Python 3（用于运行注册脚本；脚本随 WorkBuddy 安装，完整路径见下方「方式 C」）
 
 ---
 
@@ -52,12 +52,27 @@ cp -r ./HLNA-Skill/hln-a ~/.workbuddy/plugins/marketplaces/my-experts/plugins/hl
 
 ### 方式 C：从专家包源码自行校验注册
 
+脚本位于 WorkBuddy 内置的 `expert-manager` 技能目录中。**优先使用 `marketplaces` 下的稳定路径**，不要使用带版本哈希的旧 `cache` 路径（升级后经常失效）：
+
 ```bash
-python3 <WorkBuddy安装目录>/skills/expert-manager/scripts/validate_expert.py <expert-dir>
-python3 <WorkBuddy安装目录>/skills/expert-manager/scripts/register_expert.py <expert-dir>
+# macOS / Linux
+EXPERT=~/.workbuddy/plugins/marketplaces/my-experts/plugins/hln-a
+SCRIPTS=~/.workbuddy/plugins/marketplaces/workbuddy-builtin/skills/expert-manager/scripts
+python3 "$SCRIPTS/validate_expert.py" "$EXPERT"
+python3 "$SCRIPTS/register_expert.py" "$EXPERT"
 ```
 
-注册成功后重启或刷新 WorkBuddy，在「专家中心 → 我的专家」即可看到 **HLN-A（方舟生存专家）**。
+```powershell
+# Windows（PowerShell；Windows 通常用 python 而非 python3）
+$EXPERT  = "$env:USERPROFILE\.workbuddy\plugins\marketplaces\my-experts\plugins\hln-a"
+$SCRIPTS = "$env:USERPROFILE\.workbuddy\plugins\marketplaces\workbuddy-builtin\skills\expert-manager\scripts"
+python "$SCRIPTS\validate_expert.py" "$EXPERT"
+python "$SCRIPTS\register_expert.py" "$EXPERT"
+```
+
+> 若 `marketplaces/workbuddy-builtin` 下找不到脚本，可到 `~/.workbuddy/plugins/cache/workbuddy-builtin/skill-expert-manager/<最新版本目录>/scripts/` 中查找，选择版本号最新的那个目录。
+
+`validate_expert.py` 会检查结构是否合规，`register_expert.py` 会把专家写入 `my-experts/.codebuddy-plugin/marketplace.json`。注册成功后重启或刷新 WorkBuddy，在「专家中心 → 我的专家」即可看到 **HLN-A（方舟生存专家）**。
 
 > 目录必须是 `.../marketplaces/my-experts/plugins/hln-a/`，放到别处不会被检测到。若目录里已有同名专家，直接覆盖即可，然后**务必重新注册一次**。
 
